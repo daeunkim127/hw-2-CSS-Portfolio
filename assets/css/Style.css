@@ -16,7 +16,7 @@ body {
     --white: rgb(250, 244, 248);
     --yellow: rgb(236, 184, 12);
     --navy: rgb(4, 0, 72);
-    --light:rgba(247, 193, 19, 0.877);
+    --light:rgba(247, 230, 174, 0.877);
 }
 
 header {
@@ -50,7 +50,7 @@ nav a{
     text-decoration:none;
 }
 
-nav a:hover {
+nav a:hover,.Contact-Me a:hover {
     border-color:var(--navy);
     border-style:dashed;
     padding:7px;
@@ -66,7 +66,7 @@ section {
 h2{
     font-size: 35px;
     display: block;
-    background-color: var(--light);
+    background-color: var(--yellow);
     padding: 25px;
     color:var(--white);
 }
@@ -80,7 +80,7 @@ p {
     margin-inline-end: 0px;
 }
 
-.centerimg{
+.avatar{
     margin: 2% 2%;
     border-radius:50%;
     max-width: 90%;
@@ -88,33 +88,70 @@ p {
 }
 
 .firstwork {
-    display:block;
-    width:100%;
-    height:100px;
+    display:flex;
+    justify-content: center;
+    margin: 1%;
+    width:98%;
+    height:500px;
     object-position:center;
+    padding:.5%;
+    background-color: var(--light);
 }
 
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+.workimg {
+    
+    width:31%;
+    margin:1%;
+    padding:.5%;
+    background-color: var(--light);
 }
 
-.footer h2 {
-    font-size: 20px;
+.Contact-Me ul {
+    display: flex;
+    justify-content:space-evenly;
+    min-width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:3%;
+    font-size: 25px;
+    color:var(--yellow)
 }
-@media screen and (max-width: 768px) {
+.Contact-Me a{
+    text-decoration: none;
+    color:var(--yellow);
+    border-style: dashed;
+    padding:3px;
+    border-radius: 15%;
+    ;
+}
+
+button {
+    width:60px;
+    height:60px;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    background-color: var(--light);
+    opacity: 80%;
+}
+button a{
+    text-decoration: none;
+    font-size:50px;
+}
+@media screen and (max-width: 840px) {
     header, main {
       flex-direction: column;
     }
 
-    .firstwork, figure a img{
+    .firstwork, .workimg{
         width:100%;
         height:100%;
         margin: 1% 0;
     }
-  
+    .Contact-Me ul{
+        flex-direction: column;
+    }
+    .Contact-Me li {
+        margin-top:4%;
+    }
   }
   
