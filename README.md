@@ -6,5 +6,9 @@ This porfolio includes my photo(to be updated), my story, my work, and how to co
 
 ## Responsive Layout
 
+Width < 840px
+![portfolio layout](./assets/images/Responsive layout-2.gif)
 
+Width >840px
+![portfolio layout-2](./assets/images/Responsive layout-1.gif)
 
