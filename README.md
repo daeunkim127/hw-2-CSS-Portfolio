@@ -10,11 +10,12 @@ The following animation shows the appearance of web application according to the
 
 * Width < 840px
 
-![Responsive-layout-1](./assets/images/Responsive layout-2.gif)
+[responsive-layout-1](/./assets/images/Responsive-layout-2.gif)
+
 
 * Width >840px
 
-[Responsive-layout-2](./assets/)
+[Responsive-layout-2](./assets/images/Responsive-layout-1.gif)
 
 ## Link
 
