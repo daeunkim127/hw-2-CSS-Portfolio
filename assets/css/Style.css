@@ -1,1 +1,188 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --yellow:rgb(247, 206, 93);
+    --white:rgb(250, 250, 235);
+    --navy: rgb(4, 4, 46);
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--yellow);
+}
+
+header h1 {
+    font-size: 60px;
+    color:var(--navy);
+}
+
+header nav ul{
+    display: flex;
+    justify-content:space-between;
+    min-width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top:9%;
+}
+
+nav a{
+    border-style:dashed;
+    border-radius: 15%;
+    padding:9px;
+    color:var(--white);
+    text-decoration:none;
+}
+
+nav a:hover,.Contact-Me a:hover {
+    border-color:var(--navy);
+    border-style:dashed;
+    padding:7px;
+    border-radius: 15%;
+  }
+
+section {
+    border-top:9px dashed var(--yellow);
+    padding: 5% 0;
+    text-align: center;
+
+}
+
+p {
+    display:block;
+    font-size: 25px
+}
+
+h2{
+    font-size: 35px;
+    display: block;
+    background-color: var(--yellow);
+    padding: 25px;
+    color:var(--white);
+}
+
+footer {
+    display:block;
+    text-align: center;
+    margin-top:2%;
+    background-color:var(--yellow);
+    padding:1%;
+    color: var(--white);
+}
+
+.avatar{
+    margin: 2% 2%;
+    border-radius:50%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+figure {
+    position:relative;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  figure:hover .title {
+    opacity: 1;
+  }
+  
+#firstwork img{
+    display: flex;
+    margin-top:1%;
+    width:100%;
+    max-height:600px;
+    padding:.5%;
+    background-color: var(--yellow);
+}
+
+div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div img{
+    width:98%;
+    margin:1%;
+    padding:1%;
+    background-color: var(--yellow)
+}
+
+.Contact-Me ul {
+    display: flex;
+    justify-content:space-evenly;
+    min-width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:3%;
+    font-size: 25px;
+    color:var(--yellow)
+}
+
+.Contact-Me a{
+    text-decoration: none;
+    color:var(--yellow);
+    border-style: dashed;
+    padding:3px;
+    border-radius: 15%;
+    ;
+}
+
+button {
+    width:60px;
+    height:60px;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    background-color: var(--light);
+    opacity: 80%;
+}
+
+button a{
+    text-decoration: none;
+    font-size:50px;
+}
+
+@media screen and (max-width: 840px) {
+    header, main, div {
+      flex-direction: column;
+    }
+    #firstwork img{
+        width:100%;
+        margin-top:1%
+        padding:1%;
+    }
+    div img {
+        width:100%;
+        max-height: 200px;
+        margin:1% 0 0 0;
+    }
+    .Contact-Me ul{
+        flex-direction: column;
+    }
+    .Contact-Me li {
+        margin-top:4%;
+    }
+  }
+  
 
