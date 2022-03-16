@@ -5,13 +5,6 @@
 }
 
 
-:root {
-    --white: rgb(250, 244, 248);
-    --yellow: rgb(236, 184, 12);
-    --navy: rgb(4, 0, 72);
-    --light:rgba(247, 230, 174, 0.877);
-}
-
 header {
     display:flex;
     justify-content: space-between;
@@ -140,6 +133,7 @@ div img{
     font-size: 25px;
     color:var(--yellow)
 }
+
 .Contact-Me a{
     text-decoration: none;
     color:var(--yellow);
@@ -158,10 +152,12 @@ button {
     background-color: var(--light);
     opacity: 80%;
 }
+
 button a{
     text-decoration: none;
     font-size:50px;
 }
+
 @media screen and (max-width: 840px) {
     header, main, div {
       flex-direction: column;
