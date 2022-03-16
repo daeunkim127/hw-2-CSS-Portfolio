@@ -4,13 +4,6 @@
     margin: 0;
 }
 
-body {
-    margin: 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    line-height:1.3;
-}
 
 :root {
     --white: rgb(250, 244, 248);
@@ -65,7 +58,8 @@ section {
 }
 
 p {
-    font-size: 20px
+    display:block;
+    font-size: 25px
 }
 
 h2{
@@ -92,23 +86,49 @@ footer {
     max-height: 90%;
 }
 
-.firstwork {
-    display:flex;
-    justify-content: center;
-    margin: 1%;
-    width:98%;
-    height:500px;
-    object-position:center;
-    padding:.5%;
-    background-color: var(--light);
+figure {
+    position:relative;
 }
 
-.workimg {
-    
-    width:31%;
-    margin:1%;
+.title{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  figure:hover .title {
+    opacity: 1;
+  }
+  
+#firstwork img{
+    display: flex;
+    margin-top:1%;
+    width:100%;
+    max-height:600px;
     padding:.5%;
-    background-color: var(--light);
+    background-color: var(--yellow);
+}
+
+div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div img{
+    width:98%;
+    margin:1%;
+    padding:1%;
+    background-color: var(--yellow)
 }
 
 .Contact-Me ul {
@@ -143,14 +163,18 @@ button a{
     font-size:50px;
 }
 @media screen and (max-width: 840px) {
-    header, main {
+    header, main, div {
       flex-direction: column;
     }
-
-    .firstwork, .workimg{
+    #firstwork img{
         width:100%;
-        height:100%;
-        margin: 1% 0;
+        margin-top:1%
+        padding:1%;
+    }
+    div img {
+        width:100%;
+        max-height: 200px;
+        margin:1% 0 0 0;
     }
     .Contact-Me ul{
         flex-direction: column;
